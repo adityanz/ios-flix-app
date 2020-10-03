@@ -12,6 +12,7 @@
 		480E3DCD251EFD220017497F /* light-night-sunlight-line-red-color-748105-pxhere.com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 480E3DCC251EFD220017497F /* light-night-sunlight-line-red-color-748105-pxhere.com.jpg */; };
 		4823E803252822C7003AFC2D /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823E802252822C7003AFC2D /* MovieDetailsViewController.swift */; };
 		4823E80B25283141003AFC2D /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823E80A25283141003AFC2D /* MovieGridViewController.swift */; };
+		4823E8102528372D003AFC2D /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823E80F2528372D003AFC2D /* MovieGridCell.swift */; };
 		4890F555251EA38C00A6D2C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890F554251EA38C00A6D2C2 /* AppDelegate.swift */; };
 		4890F557251EA38C00A6D2C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4890F556251EA38C00A6D2C2 /* SceneDelegate.swift */; };
 		4890F55C251EA38C00A6D2C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4890F55A251EA38C00A6D2C2 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		480E3DCC251EFD220017497F /* light-night-sunlight-line-red-color-748105-pxhere.com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "light-night-sunlight-line-red-color-748105-pxhere.com.jpg"; path = "../../../../../../Downloads/light-night-sunlight-line-red-color-748105-pxhere.com.jpg"; sourceTree = "<group>"; };
 		4823E802252822C7003AFC2D /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		4823E80A25283141003AFC2D /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		4823E80F2528372D003AFC2D /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		4890F551251EA38C00A6D2C2 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4890F554251EA38C00A6D2C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4890F556251EA38C00A6D2C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		4890F553251EA38C00A6D2C2 /* flix */ = {
 			isa = PBXGroup;
 			children = (
+				4823E80F2528372D003AFC2D /* MovieGridCell.swift */,
 				4890F554251EA38C00A6D2C2 /* AppDelegate.swift */,
 				4890F556251EA38C00A6D2C2 /* SceneDelegate.swift */,
 				48F162D7251EAD7B00D077EA /* MoviesViewController.swift */,
@@ -425,6 +428,7 @@
 				480E3DB5251EF2310017497F /* MovieCell.swift in Sources */,
 				4890F557251EA38C00A6D2C2 /* SceneDelegate.swift in Sources */,
 				4823E80B25283141003AFC2D /* MovieGridViewController.swift in Sources */,
+				4823E8102528372D003AFC2D /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
