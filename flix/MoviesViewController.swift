@@ -27,7 +27,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         // Do any additional setup after loading the view.
         
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=33e2026c74eedd8ad0f0d75516adb826")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -77,6 +77,21 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         return cell
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Loading up the detail screen")
+        //Casting as the UI table view sell
+        let cell = sender as! UITableViewCell
+        //Tableview gets the index from the cell
+        let indexPath = tableView.indexPath(for: cell)!
+        //get specific view for the movie.
+        let movie = movies[indexPath.row]
+        
+        //segway controller
+        
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        //deselect cell
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
